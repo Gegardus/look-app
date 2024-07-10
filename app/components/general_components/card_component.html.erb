@@ -1,0 +1,15 @@
+<div>
+  <div>
+    <% if @image_url.present? %>
+     <img src="<%= @image_url %>" alt="" />
+    <% end %>
+  </div>
+  <div class="p-6">
+    <h2 class="font-bold"><%= header %></h2>
+    <p><%= body %></p>
+
+    <% buttons.each do |button| %>
+      <%= button %>
+    <% end %>  
+  </div>
+</div>
