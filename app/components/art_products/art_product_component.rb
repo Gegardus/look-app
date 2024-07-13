@@ -7,9 +7,4 @@ class ArtProducts::ArtProductComponent < ViewComponent::Base
     @description = art_product[:description]
     @image_url = art_product[:image_url]
   end
-  
-  # def initialize(art_products:, cols: 4)
-  #   @art_products = art_product[:title]
-  #   @cols = cols
-  # end
 end

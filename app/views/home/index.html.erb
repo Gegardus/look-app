@@ -1,5 +1,5 @@
 <div>
-  <h1 class="font-bold text-4xl mb-6">Home</h1>
+  <h1 class="font-bold text-emerald-900 text-4xl mb-6">Home</h1>
   
   <%= render HelloWorldComponent.new %>
 
@@ -13,10 +13,18 @@
         {title: "title of art product 1", description: "description of art product 1", image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6TN-8JfkmSpQtP7f3LUIX0SzJTq2dlTRPJw&s"},
         {title: "title of art product 2", description: "description of art product 2", image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6TN-8JfkmSpQtP7f3LUIX0SzJTq2dlTRPJw&s"},
         {title: "title of art product 3", description: "description of art product 3", image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6TN-8JfkmSpQtP7f3LUIX0SzJTq2dlTRPJw&s"},
-        {title: "title of art product 4", description: "description of art product ", image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6TN-8JfkmSpQtP7f3LUIX0SzJTq2dlTRPJw&s"}
+        {title: "title of art product 4", description: "description of art product 4", image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6TN-8JfkmSpQtP7f3LUIX0SzJTq2dlTRPJw&s"},
+        {title: "title of art product 5", description: "description of art product 5", image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6TN-8JfkmSpQtP7f3LUIX0SzJTq2dlTRPJw&s"},
+        {title: "title of art product 6", description: "description of art product 6", image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6TN-8JfkmSpQtP7f3LUIX0SzJTq2dlTRPJw&s"},
+        {title: "title of art product 7", description: "description of art product 7", image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6TN-8JfkmSpQtP7f3LUIX0SzJTq2dlTRPJw&s"},
+        {title: "title of art product 8", description: "description of art product 8", image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6TN-8JfkmSpQtP7f3LUIX0SzJTq2dlTRPJw&s"}
       ] %>
       <%= render ArtProducts::ArtProductComponent.with_collection(art_products) %>
     </div>
+
+    <%# <div class="grid gap-2 auto-cols-max grid-cols-4"> %>
+      <%= render ArtProducts::ArtProductGalleryComponent.new(art_products:) %>
+    <%# </div> %>
 </div>
 
  
